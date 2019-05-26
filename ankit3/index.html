@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+     <meta name="viewport" content="width=device-width">
+
+    <title>
+      Datsme: A friend finder app
+    </title>
+      <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="theme-color" content="#3E3E49"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/css/animations.css">
+  <link rel="icon" sizes="57x57" href="static/icon-tab.png">
+  <link rel="stylesheet" type="text/css" href="css/changing_gradient.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/css/media-queries.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/aos.css">
+  <link rel="stylesheet" type="text/css" href="css/css/navbar.css">
+  <link rel="stylesheet" type="text/css" href="css/css/particle-e.css">
+  <link rel="stylesheet" type="text/css" href="css/css/buttons.css">
+  <link rel="stylesheet" type="text/css" href="css/feature_cards.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/grid-videos.css" type="text/css">
+  </head>
+  
+  <body style="margin:0px!important;font-family:'Quicksand','Helvetica Neue',Helvetica,Arial,sans-serif;">
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  
+  <div id="top-view">
+<!-- /*MAIN OVERLAY AREA*/ -->
+ <div class="mobile-top">
+  <nav id="main">
+    <ul>
+      <!-- <li class="logo"><a href="#">Main</a></li> -->
+      <a href="#top-view"><img class="logo-top-main"alt="datsme" style="position:absolute;left:3vw;top:1vh;z-index:2;width:50px;height:50px;" src="static/datsme_logo_top_bar.png">
+      </a>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li>
+        <button onclick="location.href='https://play.google.com/store/apps/details?id=me.dats.com.datsme'" class="download-button" style="border-radius:100px;margin:1vw 5vw 3vw;background:white;color:black;padding:8px 15px;border:1px solid black;" type="button" class="btn info"><b style="font-size:80%;font-weight:0;">TRY DATSME</b></button></li>
+
+    </ul>
+  </nav>
+<div id="main-top" style="background:url(static/phoneback4.png);width:100%;height:auto;min-height:100vh;">
+         <h1 id="main-text" align="left" style="color:white;padding-top:20vh;margin-top:0px!important;">Welcome to this <br> <span class="span" style="font-family:'Quicksand','Helvetica Neue',Helvetica,Arial,sans-serif;">
+                AMAZING
+              </span> <br>friend finder app<h2 id="main-text2"style="font-size:180%;color:white;"align="left">Discover new people like <b>yourself</b> to be <b>yourself</b></h2></h1><br><br>
+     <div align="center">
+          <a href="https://www.facebook.com/Datsme.io/" target="_blank" ><img alt="facebook" src="social-done/facebook.png"></a>
+          <a href="https://www.linkedin.com/company/datsme/about/" target="_blank"><img alt="linkedin" src="social-done/linkedin.png"></a>
+          <a href="#"><img alt="instagram" src="social-done/instagram.png"></a>
+          <a href="https://twitter.com/Datsme_app" target="_blank" ><img alt="twitter" src="social-done/twitter.png"></a>
+    </div>
+  </div>
+  </div>
+
+<div class="web-top">
+  <div id="overlay"></div>
+  <div id="main-top" class="video-container">
+    <video autoplay loop muted width="100%" id="main-video">
+          <source src="fair.mp4" type="video/mp4" /> Your browser does not support the video tag. We suggest you upgrade your browser.
+        </video>
+        <div id="home-text" style="font-family: 'Quicksand', sans-serif;">
+          <a href="#top-view"><img alt="datsme" style="position:absolute;left:0vw;top:-22vh;z-index:2;width:75px;height:75px;" src="static/datsme_logo_top_bar.png"> </a>
+          <h1 id="main-text">Welcome to this<br>
+              <span class="span" style="font-family:'Quicksand','Helvetica Neue',Helvetica,Arial,sans-serif;">
+                AMAZING
+              </span>
+              <br>friend finder app.
+          </h1>
+
+          <hr id="top-hr" style="color:white;height: 1px;width:50px;background: white;border-radius: 10px;" align="left">
+        
+          <p id="small-font">The real <b>world</b> is calling</p>
+          <p id="small-font"  >Discover new people like <b>yourself</b>,<br>to be <b>yourself.</b></p>
+          <a href="https://play.google.com/store/apps/details?id=me.dats.com.datsme"><i class="fa fa-cog fa-spin fa-3x fa-fw" data-aos="fade-down-left"></i>
+            <span class="sr-only"></span>
+          </a>
+      
+            <img alt="Datsme phone" src="screens/phone_new.png" id="phone1">
+            <img alt="Datsme phone 2" src="screens/phone_map.png" id="phone2">
+
+            <div class="social-links">
+          <a target="_blank" href="https://www.facebook.com/Datsme.io/"><i class="fab fa-facebook-f"></i></a>
+          <a target="_blank" href="https://www.linkedin.com/company/datsme/about/"><i class="fab fa-linkedin-in"></i></a>
+          <a target="_blank" href="https://www.youtube.com/channel/UCJX4aRVBT-aOom_2mpH0sJw"><i class="fab fa-youtube"></i></a>
+          <a target="_blank" href="https://twitter.com/Datsme_app" target="_blank"><i class="fab fa-twitter"></i></a>
+</div>
+        </div>
+
+    </div>
+  </div>
+  </div>
+  <div data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1000">
+
+<section class="card-container" style="margin-top:10vh!important; ">
+
+  
+
+
+    <article class="card">
+        <figure class="card__thumbnail">
+            <i class="fas fa-users big-icon users" aria-hidden="true"></i>
+        </figure>
+        <header class="card__title">
+            <h1 style="font-size:200%;">Find Friends</h1>
+        </header>
+        <main class="card__description">
+            <p id="cards-p">This app was made keeping in mind the need of people to <b>socialize</b> and <b>communicate</b>, with people like themselves</p> 
+          <button style="margin-top:2vh;" type="button" class="btn info btn-lg">Learn more</button>
+        </main>
+
+    </article>
+
+
+
+
+
+    <article class="card">
+
+        <figure class="card__thumbnail">
+            <i class="fas fa-user-shield big-icon shield" aria-hidden="true"></i>
+        </figure>
+        <header class="card__title">
+            <h1 style="font-size:200%;">User privacy</h1>
+        </header>
+        <main class="card__description">
+            <p id="cards-p">The data is kept <b>secure</b> and <b>private</b> as per the user's settings, to mantain the highest quality of  user experience.</p> 
+          <button style="margin-top:2vh;"  type="button" class="btn success btn-lg" href="#">Learn more</button> 
+        </main>
+    </article>
+    
+
+    <article class="card">
+        <figure class="card__thumbnail">
+            <i class="fas fa-laptop-code big-icon code" aria-hidden="true"></i>
+        </figure>
+        <header class="card__title">
+            <h1 style="font-size:200%;">Accurate Matching</h1>
+        </header>
+        <main class="card__description">
+          <p id="cards-p">Our pair finding algorithm ensures that you find the 
+          <b>perfect</b> friend with the perfect <b>chemistry</b> and perfect <b>like-mindedness.</b></p> 
+          <button style="margin-top:2vh;"  type="button" class="btn warning btn-lg" href="#">Learn more</button>
+        </main>
+    </article>
+  </section>
+</div>
+
+<!-- VIDEO GRID AREA  -->
+<div class="video-grid-area" style="overflow:hidden;">
+    <h1 class="heading-videos">Swipe to know more !</h1>
+    <img onclick="goLeft()" class="arrow-swipe left-arrow" src="static/left-arrow.png" alt="left-arrow">
+    <img onclick="goRight()" class="arrow-swipe right-arrow" src="static/right-arrow.png" alt="left-arrow">
+  <div class="container-of-videos" style="overflow:hidden;">
+  <div class="videos"  style="overflow:hidden;">
+    <video class="special-video left-image2" data-key=0 src="videos/video1.mp4" muted 
+    ></video>
+    <video class="special-video left-image1" data-key=1  src="videos/video2.mp4" muted ></video>
+    <video class="special-video active-image" data-key=2 src="videos/video3.mov" muted ></video>
+    <video class="special-video right-image1" data-key=3  src="videos/video4.mov"muted ></video>
+    <video class="special-video right-image2" data-key=4  src="videos/video5.mov"muted></video>
+  </div>
+  </div>
+    <div class="content">Datsme is here to lessen your load off by finding you a 
+      friend in a new location. Just fire up the app, and find the most compatible
+     people in your vicinity !</div>
+  </div>
+<!-- PARTICLE EFFECT AREA -->
+
+<div id="particles-js">
+<h1 align="center" class="animatable fadeInUp" style="font-size:320%;position:absolute;z-index:-20;font-weight:1000px;color:white;margin-left:10vw;margin-right:10vw;margin-top:20vh;font-family: 'Quicksand', sans-serif;">Meet highly compatible people in your area!
+    <br>
+
+  <p align="left" id="shocking-p" style="font-size:60%;color:white;margin-top:20vh;margin-bottom:30vh;">Datsme enables you to find, explore, and meet the unexpected. It has the capability to change your small world into something that is worth remembering, that is worth cherishing.And this definitely makes it worth a try.</p>
+</h1></div>
+
+
+<div class="container">
+<section id="a1">
+
+  <title>Location Icon & Animation</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">	
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+</head>
+<body>
+<div class="container animated bounce">
+	<i  id="feature-icon" style="color:black;position:absolute;margin-left:49.5vw;margin-top:10vh;" class="fas fa-map-marker-alt"></i>
+</div>
+
+  <h1 id="phone-h1">1. Live Location</h1>
+  <hr id="hr-4">
+  <div  data-aos="fade-up"
+     data-aos-easing="linear"
+     data-aos-duration="1999">
+  <h2 id="phone-highlights"  ><b>Feel close to the people near you, not just in your heart, but also near your own location.</b></h2><br>
+  <p id="phone-paragraph" >Connect with people that you can meet up on a regular basis.
+<br><br>
+ Have more and more face to face conversations and build up on your friendship over time.
+</p>
+</div>
+
+</section>
+<section id="a2">
+
+  <img alt="compatibility" id="feature-icon" src="static/compatibility.png" style="color:black;position:absolute;margin-left:49.5vw;margin-top:10vh;">
+    <h1 id="phone-h1">2. Find the Compatibility</h1>
+  <hr id="hr-4">
+  <div  data-aos="fade-up"
+     data-aos-easing="linear"
+     data-aos-duration="1999">
+  <h2 id="phone-highlights"><b>Find friends you can be with for longer.</b></h2>
+  <p id="phone-paragraph"> Find friends who you will stick to and they will stick to you because you would know each other in and out. And how?
+<br><br>
+Just answer a few questions related to your views, personality, attitudes, and more. And find a like-minded friend just around the corner.
+</p>
+</div>
+</section>
+<section id="a3">
+	<title>Question Icon & Animation</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">	
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+</head>
+<body>
+<div class="container animated bounce">
+	 <i id="feature-icon" style="color:black;position:absolute;margin-left:49.5vw;margin-top:10vh;" class="fas fa-question  fa-3x"></i>
+</div>
+
+ 
+    <h1 id="phone-h1">3. Ask what matters</h1>
+  <hr id="hr-4">
+  <div  data-aos="fade-up"
+     data-aos-easing="linear"
+     data-aos-duration="1999">
+  <h2 id="phone-highlights"><b>This feature will let you fill the gaps and personalize your relationship.</b></h2>
+  <p id="phone-paragraph"><br><br>
+Customize your profile, ask what matters to you the most, take forward the relationship by asking and answering what you wish.
+
+</p>
+</div>
+</section>
+<section id="a4">
+
+  <title>Chat Icon & Animation</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">	
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+</head>
+<body>
+<div class="container animated shake">
+	 <i id="feature-icon" style="color:black;position:absolute;margin-left:49.5vw;margin-top:10vh;" class="fas fa-comments  fa-3x"></i>
+</div>
+    <h1 id="phone-h1">4. Chat with them</h1>
+  <hr id="hr-4">
+  <div  data-aos="fade-up"
+     data-aos-easing="linear"
+     data-aos-duration="1999">
+  <h2 id="phone-highlights"><b>add them and start chatting, without hesitation.</b></h2>
+  <p id="phone-paragraph">We respect your privacy and provide an open space for you to chat and discuss what you like, where to meet, and even what you ate.
+<br><br>
+Simply say hi, and see the change in the way you communicate. We help you find and explore, the rest is upto you.
+
+</p>
+</div>
+</section>
+<!-- APP KA PROMOTION FIRSE -->
+
+<div class="container" data-aos="fade-up" align="center">
+  <h1 id="big-heading" >With <b>Datsme</b>, we are changing the world, by changing <b>your</b> world.</h1>
+  <hr id="last-hr" style="margin-left:46vw;margin-top:9vh!important;width:7%;background:black;border-radius:5px;height:2px;">
+  <h1 id="big-heading" data-aos="fade-up" style="margin-left:10vw;font-size:230%;margin-top:10vh!important;">Get started with Datsme</h1>
+  <a href="https://play.google.com/store/apps/details?id=me.dats.com.datsme"><img class="animatable bounceIn" alt="google" id="last-google" src="static/google-play-badge.png" style="display:inline-flex;margin-left:10vw;"></a>
+</div>
+
+<!-- THE FOOTER -->
+<div id="footer" style="width:117%;padding-right:0px!important;margin-right:0px!important;padding-top:9vh;padding-bottom:40vh;background:linear-gradient(to right,rgba(129,113,237,1),rgba(200,113,235,1) 150%);margin:0px;">
+
+  <div class="col-md-3">
+  <h1 id="footer-text"><b>Company</b></h1>
+  <div class="row" data-aos="fade-up" style="margin-left:0.1vh;"><a id="footer-pages"  href='views/aboutus.html'>About</a></div>
+  <div class="row" data-aos="fade-up" style="margin-left:0.1vh;"><a id="footer-pages"  href='views/contact.html'>Contact us</a></div>
+  <div class="row" data-aos="fade-up" style="margin-left:0.1vh;"><a id="footer-pages" href='#'>Jobs</a></div>
+  </div>
+  <div class="col-md-3">
+  <h1 id="footer-text">Product</h1>
+  <div class="row" data-aos="fade-up"style="margin-left:0.1vh;"><a id="footer-pages"  href="index.html">Home</a></div>
+  <div class="row" data-aos="fade-up" style="margin-left:0.1vh;"><a id="footer-pages" data-aos="fade-up" href="views/howitworks.html">How it works</a></div>
+  </div>
+  <div class="col-md-3">
+  <h1 id="footer-text">Legal</a></h1>
+  <div class="row">
+  <a id="footer-pages" href='views/policies.html' data-aos="fade-up" style="margin-left:2.5vh;">Privacy Policy</a>
+  </div><div class="row">
+  <a id="footer-pages" href='views/terms.html' data-aos="fade-up" style="margin-left:2.5vh;margin-bottom:5vh!important;">Terms of use</a>
+</div>
+  </div>
+  <div class="col-md-3">
+  <h1 id="footer-text"  style="margin-bottom:5vh!important;">Social</a></h1>
+  <div class="social-links-2">
+            <a href="https://www.facebook.com/Datsme.io/"><img alt="facebook"  data-aos="fade-up" src="social-done/facebook.png"></a>
+          <a href="https://www.linkedin.com/company/datsme/about/"><img alt="linkedin" data-aos="fade-up" src="social-done/linkedin.png"></a>
+          <a href="#"><img alt="youtube" data-aos="fade-up" src="social-done/instagram.png"></a>
+          <a href="https://twitter.com/Datsme_app" target="_blank"><img alt="twitter" data-aos="fade-up" src="social-done/twitter.png"></a>
+  </div>
+  </div>
+</b>
+</div>
+<div id="footer-2" class="copyright" style="font-size:70%;color:white;background:linear-gradient(to right,rgba(100,113,237,1),rgba(201,113,235,1) 150%);padding-top:15px;padding-bottom:15px;padding-left:50px;">&copy; Different Angle 42 Pvt. Ltd.</div>
+
+<script src="js/main.js"></script>
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+<script src="js/particle-e.js"></script>
+<script src="js/grid-videos.js"></script>
+<script src="js/animations.js"></script>
+<script>
+// NAVIGATIONAL DIRECTION 
+ const nav = document.querySelector('#main');
+   const topOfNav = nav.offsetTop;
+var lastScrollTop = pageYOffset || topOfNav;
+window.addEventListener("scroll", function(){
+   var st = window.pageYOffset || topOfNav;
+   if (st > lastScrollTop){
+    nav.style.opacity = 0;
+    // nav.style.transform = `rotateX(90deg)`;
+      // downscroll code
+   } else {
+      // upscroll code
+      // nav.style.transform = `rotateX(0deg)`;
+      nav.style.opacity = 1;
+   }
+   lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
+}, false);
+
+
+  // FOR NAVIGATIONAL BAR
+  var download_button = document.querySelector('.download-button');
+  var main_logo = document.querySelector('.logo-top-main');
+  // console.log(nav);
+
+
+  function fixNav(){
+    
+    if(window.scrollY >= 1 && window.scrollY < window.screen.height){
+      download_button.style.border = `none`;
+      nav.style.background = `none`;
+
+    }
+    else if(window.scrollY >= 1){
+      
+      nav.classList.add('fixed-nav');
+
+      document.body.style.paddingTop = nav.offSetHeight + 'px';
+      download_button.style.opacity = "1";    
+      download_button.style.border = `1px solid black`;
+      download_button.style.margin = `1vw 5vw 3vw`;
+      main_logo.style.width = `50px`;
+      main_logo.style.height = `50px`;
+      nav.style.background = `white`;
+      main_logo.style.top = `1vh`;
+  }
+    else{
+
+      nav.classList.remove('fixed-nav');   
+      // download_button.style.opacity = "0";
+      download_button.style.border = `none`;
+      download_button.style.margin = `10vw 5vw 3vw`;
+      nav.style.background = `none`;
+      main_logo.style.width = `80px`;
+      main_logo.style.height = `80px`;
+      main_logo.style.top = `5vh`;
+    }
+}
+  window.addEventListener('scroll', fixNav);
+  // FOR ADJUSTING THE VIEWPORT
+  sections = Array.from(document.querySelectorAll('section'));
+  sections = sections.slice(1);
+
+  // console.log(sections)
+  function ChangeWidth(){
+    var width_new = document.getElementById('particles-js').offsetWidth;
+    document.getElementById('footer').style.width = width_new + 'px';
+    document.getElementById('footer-2').style.width = width_new + 'px';
+    sections.forEach(section =>{
+      section.style.width = width_new + 'px';
+    });
+    document.querySelector('.video-grid-area').style.width = width_new + 'px';
+  };
+  setInterval(ChangeWidth,1);
+</script>
+<style>
+
+@media(max-width:500px){
+  #main{
+  height:10vh!important;
+}
+  .download-button{
+    margin:3vw 5vw 3vw;
+    transition : all 0.4s;
+    border-radius:100px;
+    padding:10px 18px!important;
+    white-space:nowrap!important;
+
+  }
+}
+  .grid-h1{
+    position:absolute!important;margin: 8vh 0vw 0vw 5vw!important;
+}
+@media(max-width:500px){
+    .grid-h1{margin-left:15vw!important;font-size:210%;}
+    .grid-image{margin-top:200px;}
+
+}
+@media(max-width:411px){
+  .grid-h1{margin-left:20vw!important;font-size:210%;}
+}
+button{
+  transition: all 0.5s;
+}
+.logo-top-main{
+  transition : all 0.4s;
+}
+#phone1{
+  width:20%;
+}
+#phone2{
+  width:30%;
+}
+.fab{
+  background:none;
+  border-radius:100%;
+  color:white;
+  margin:0px!important;
+  transition : all 0.5s;
+}
+button:active{
+outline:none!important;
+}
+button:hover{
+  outline: none!important;
+}
+
+</style>
+</body>
+</html>
