@@ -1,0 +1,25 @@
+.card-container {
+    display: grid;
+    /*padding: 1rem;*/
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    font-family: 'Open Sans', sans-serif;
+    margin-top:10vh;
+    grid-gap: 1rem;
+    width:80%;
+    margin-left:12vw!important;
+}
+.card {
+    display: grid;
+    /*width:50%;*/
+    /*min-width:10vw;*/
+    /*width:200%%;*/
+    text-align:center;
+    margin-top:10vh;
+    min-height: 70vh;
+    /*background:url(../static/connectwork.png);*/
+    color:black;
+    font-weight:100;
+}
+.card .button {
+    align-self: end;
+}
